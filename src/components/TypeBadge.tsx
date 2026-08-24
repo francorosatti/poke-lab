@@ -15,7 +15,7 @@ export function TypeBadge({ type, note, size = 'md' }: Props) {
       className={`type-badge type-badge--${size}`}
       style={{ background: info.color, borderColor: info.colorDark }}
     >
-      <TypeIcon type={type} size={size === 'sm' ? 20 : 26} />
+      <TypeIcon type={type} size={size === 'sm' ? 22 : 28} color={info.color} />
       {info.label}
       {note && <b className="type-badge__note">{note}</b>}
     </span>
